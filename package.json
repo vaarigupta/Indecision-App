@@ -1,0 +1,14 @@
+{
+  "name": "Indecision-App",
+  "version": "1.0.0",
+  "description": "indecision app ",
+  "main": "index.js",
+  "repository": "https://github.com/vaarigupta/Indecision-App.git",
+  "author": "vaarigupta <vaarigupta24@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1"
+  }
+}
