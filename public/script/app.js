@@ -53,8 +53,7 @@ if (greet) {
 	var greet1 = greet.split(" ")[0];
 	console.log(greet1);
 }
-function hello() {
-
+function hello(greet) {
 	return greet1;
 }
 
@@ -78,7 +77,8 @@ var template2 = React.createElement(
 		null,
 		app.options.length > 0 ? 'Options Available' : 'No options'
 	),
-	greet1
+	greet1,
+	hello(greet)
 );
 var approot = document.getElementById('root');
 var approot1 = document.getElementById('root1');

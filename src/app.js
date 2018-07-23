@@ -29,9 +29,8 @@ if(greet)
 	var greet1 = greet.split(" ")[0];
 	console.log(greet1);
 }
-function hello()
+function hello(greet)
 {   
-	
 	return greet1;
 }
 
@@ -41,7 +40,8 @@ const template2 = (
 		{ app.title? <p>Title : {app.title}</p> : 'Anonymous'}
 		{app.subtitle && <p>Subtitle : {app.subtitle}</p>} 
 		<p>{(app.options.length > 0) ? 'Options Available' : 'No options' }</p> 
-		 {greet1}     
+		 {greet1}
+		 {hello(greet)}    
 	</div>		
 
 
