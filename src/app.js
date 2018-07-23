@@ -6,7 +6,7 @@ var template = (
 	   </div>
 			   );
 
-var template2 = (
+var template1 = (
 <div> 
 <h1>Hellloo</h1>
 <p> Name : vaari </p>
@@ -15,26 +15,41 @@ var template2 = (
 </div>
 );
 
-var app = 
+const app = 
 {
   title : "vaari",
   subtitle : "gupta",
   options : ['one', 'two']
-  
+
 };
-var template3 = (
+var greet = "helllo Loki";
+
+if(greet)
+{
+	var greet1 = greet.split(" ")[0];
+	console.log(greet1);
+}
+function hello()
+{   
+	
+	return greet1;
+}
+
+
+const template2 = (
 	<div>
 		{ app.title? <p>Title : {app.title}</p> : 'Anonymous'}
 		{app.subtitle && <p>Subtitle : {app.subtitle}</p>} 
-		<p>{(app.options.length > 0) ? 'Options Available' : 'No options' }</p>             
+		<p>{(app.options.length > 0) ? 'Options Available' : 'No options' }</p> 
+		 {greet1}     
 	</div>		
 
 
 );			   
-var approot = document.getElementById('root');
-var approot1 = document.getElementById('root1');
+const approot = document.getElementById('root');
+const approot1 = document.getElementById('root1');
 
-ReactDOM.render(template3,approot);
+ReactDOM.render(template2,approot);
 
 
 

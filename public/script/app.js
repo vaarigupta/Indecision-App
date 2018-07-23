@@ -16,7 +16,7 @@ var template = React.createElement(
 	)
 );
 
-var template2 = React.createElement(
+var template1 = React.createElement(
 	"div",
 	null,
 	React.createElement(
@@ -47,7 +47,18 @@ var app = {
 	options: ['one', 'two']
 
 };
-var template3 = React.createElement(
+var greet = "helllo Loki";
+
+if (greet) {
+	var greet1 = greet.split(" ")[0];
+	console.log(greet1);
+}
+function hello() {
+
+	return greet1;
+}
+
+var template2 = React.createElement(
 	"div",
 	null,
 	app.title ? React.createElement(
@@ -66,9 +77,10 @@ var template3 = React.createElement(
 		"p",
 		null,
 		app.options.length > 0 ? 'Options Available' : 'No options'
-	)
+	),
+	greet1
 );
 var approot = document.getElementById('root');
 var approot1 = document.getElementById('root1');
 
-ReactDOM.render(template3, approot);
+ReactDOM.render(template2, approot);
