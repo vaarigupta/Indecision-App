@@ -1,5 +1,3 @@
-"use strict";
-
 // const helllo =(name, surname)=>
 // {  
 // 	console.log(arguments)
@@ -47,6 +45,7 @@
 //---------------------------------------------------------------------------------
 
 
+
 // var name = 'vaari'; 
 // var age = 13;
 // var places = [1,2,3];
@@ -80,11 +79,12 @@
 // 		{
 // 			console.log(data + " comes")
 // 		})
-
+	    
 // 	}
 // }
 // user.bio(); 
 // console.log(user.places);
+
 
 
 ///here , forEach not changing the array ,its just rendering the rectified elements of the array not even its creating a new 
@@ -100,13 +100,13 @@
 // 		{
 // 			console.log(data + " comes")
 // 		})
-
+	    
 // 	}
 // }
 // user.bio(); 
 
 //-----------------------------------------------------------
-// 1st Method to do Multiply
+ // 1st Method to do Multiply
 /// having return statements 
 
 // const taskMultiply = {
@@ -133,16 +133,12 @@
 ///it binds itself with the taskMultiply object hence , can easily access MultiplyBy  
 
 
-var taskMultiply = {
-	list: [1, 2, 3],
-	multiplyBy: 4,
-	multiply: function multiply() {
-		var _this = this;
-
-		return this.list.map(function (num) {
-			return num * _this.multiplyBy;
-		});
+const taskMultiply = {
+	list : [1,2,3],
+	multiplyBy : 4,
+	multiply() {
+		return this.list.map((num)=> num* this.multiplyBy)
 	}
-};
+}
 
 console.log(taskMultiply.multiply());
